@@ -1,4 +1,4 @@
-# Plan d'itération 1 (exemple)
+# Plan d'itération 1
 
 > Note: Texte en bloc comme ceci indique des directives aux auteurs. Vous devez supprimer ces directives des plans soumis.
 
@@ -6,19 +6,19 @@
 
 > Dates clés montrant les échéances, comme date de début et de fin; étapes intermédiaires; points de synchronisation avec d'autres équipes; démonstrations; et ainsi de suite pour l'itération.
 
-| Étape jalon          | Date       |
-| :------------------- | :--------- |
-| Début de l'itération | 2019/05/02 |
-| Démo (séance 5)      | 2019/05/16 |
-| Fin de l'itération   | 2019/05/16 |
+| Étape jalon           | Date       |
+| :--------------------- | :--------- |
+| Début de l'itération | 2022/02/01 |
+| Démo (séance 5)      | 2022/02/15 |
+| Fin de l'itération    | 2022/02/15 |
 
 ## Objectifs clés
 
 > Afficher les objectifs clés pour l'itération, généralement un à cinq. **Les objectifs sont normalement la réalisation des exigences FURPS de l'énoncé.** Vérifier que les minima des points sont respectés pour l'itération avant de commencer!
 
-- Résoudre le problème de séparation des couches soulevé par l'auxiliaire d'enseignement lors de la dernière itération.
-- Présenter une démonstration technique de CU06 avec tests (x points).
-- Présenter une démonstration technique de CU07 avec tests (y points).
+- Présenter une démonstration technique de CU01a avec tests (1 point).
+- Présenter une démonstration technique de CU01b avec tests (1 point).
+- Présenter une démonstration technique de CU03a avec tests (1 point).
 
 ## Affectations d'éléments de travail
 
@@ -26,36 +26,31 @@
 
 Les éléments de travail suivants seront abordés dans cette itération:
 
-| Nom / Description                | Priorité | [Taille estimée (points)](#commentEstimer "Comment estimer?") | Assigné à (nom) | Documents de référence |
-| -------------------------------- | -------: | --------------------------: | --------------- | ---------------------- |
-| CU06                             | 1        | 4                           | (tous)          | Exigences pour le lab  |
-|   CU06 - conception                |          |                             | Jacques-Éric    |                        |
-|   CU06 - test et implémentation     |          |                             | Hélène          |                        |
-|   CU06 - mise à jour des modèles |          |                             | Pierre          |                        |
-| CU07                             | 1        | 2                           | (tous)          | Exigences pour le lab  |
-| CU07 - conception                |          |                             | Jérémie         |                        |
-| CU07 - test et implémentation     |          |                             | Hélène          |                        |
-| CU07 - mise à jour des modèles |          |                             | Pierre          |                        |
+| Nom / Description       | Priorité | [Taille estimée (points)](#commentEstimer "Comment estimer?") | Assigné à (nom) | Documents de référence |
+| ----------------------- | --------: | -------------------------------------------------------: | ----------------- | ------------------------ |
+| CU01a - Ajouter Cours   |         1 |                                                        1 | Nazim et Azeddine | Exigences pour le lab    |
+| CU01b-Récupérer Cours |         2 |                                                        1 | Abdelkbir         | Exigences pour le lab    |
+| CU03a - Ajouter Devoirs |         3 |                                                        1 | Hadi              | Exigences pour le client |
+| MDD/DSS/RDCU            |         1 |                                                        - | (tous)            | Exigences pour le lab    |
+| Front-end               |         5 |                                                          | (tous)            | Exigences pour le lab    |
 
 ## Problèmes
 
 > Afficher tous les problèmes à résoudre lors de l'itération. Mettre à jour le statut lorsque de nouvelles questions sont présentées au cours des réunions.
 > Si vous n'avez pas (eu) de problème, écrivez-le avec "Sans objet". Sinon, c'est comme si vous n'aviez pas fait la section.
 
-| Problème                                                                                             | Notes |
-| ---------------------------------------------------------------------------------------------------- | ----- |
-| L'Équipe ne comprend pas bien les "router handlers" dans Express                                     |       |
-| ~~Jacques-Éric n'a pas pu installer VSCode sur sa machine~~                                   |       |
-| Jacques-Éric a écrasé le code de plusieurs coéquipiers. | Jacques-Éric va suivre un tutoriel sur git pour mieux comprendre les conflits et pour utiliser les branches. |
-| Hélène part pour un match de Volleyball lors de la 3e semaine et ne sera pas disponible pour la démo |       |
+| Problème                                                                                                | Notes                                                                                            |
+| -------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| Certains membres de l'équipe ont des lacunes au niveau des technologies utilisées dans ce laboratoire. | Azeddine et Abdelkbir suivront des tutos sur internet concernant le typeScript et le javascript. |
+| Azeddine suit un autre cours en meme temps que la période aloué au laboratoire.                        | Les rencontres se feront principalement tard le soir et en fin de semaine.                       |
 
 ## Critères d'évaluation
 
 > Une brève description de la façon d'évaluer si les objectifs (définis plus haut) de haut niveau ont été atteints.
 > Vos critères d'évaluation doivent être objectifs (aucun membre de l'équipe ne peut avoir une opinion divergente) et quantifiables (sauf pour ceux évalués par l’auxiliaire d'enseignement). En voici des exemples:
 
-- 97% des cas de test passent.
-- Démonstration des fonctionnalités CU06 et CU07 pas à pas avec l’auxiliaire d'enseignement a reçu une réponse favorable.
+- Au moins 80% des cas de test passent.
+- Démonstration des fonctionnalités CU01a, CU01b et CU03a pas à pas avec l’auxiliaire d'enseignement.
 
 ## Évaluation
 
@@ -63,17 +58,22 @@ Les éléments de travail suivants seront abordés dans cette itération:
 > **Note:** cette section est complétée seulement après l'évaluation faite par l'auxiliaire d'enseignement, lors de la démo en lab.
 
 <!-- GitHub ne supporte pas les tables sans en-tête: https://stackoverflow.com/a/17543474/1168342 -->
-| Résumé | |
-| ------------------------------------- | ------------------------------------------------------------------------ |
-| Cible d'évaluation                    | Itération <!-- *Cela pourrait être toute l'itération ou simplement un composant spécifique* -->                            |
-| Date d'évaluation  |   2019/05/16 |
-| Participants       | **Coéquipiers** : Jérémie, Jacques-Éric, Pierre (Hélène avait une absence justifiée),<br> **auxiliaire d'enseignement** : Jonathan Mayhem |
-| État du projet     | 🟢 <!-- 🔴🟠🟢 *Rouge, Orange, ou Vert.* --> |
+
+| Résumé            |                                                                                                                                             |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| Cible d'évaluation | Itération 1 `<!-- *Cela pourrait être toute l'itération ou simplement un composant spécifique* -->`                                   |
+| Date d'évaluation  | 2022/02/01                                                                                                                                  |
+| Participants        | **Coéquipiers** : Nazim Ferrat, Hadi Yahia, Azedinne, Abdelkbir **auxiliaires d'enseignement** : Élaine Soucy et Pascal Anet. |
+| État du projet     | 🟢`<!-- 🔴🟠🟢 *Rouge, Orange, ou Vert.* -->`                                                                                             |
 
 ### Questions d'évaluation
+
 Regardez votre diagramme TPLANT et répondez aux questions suivantes?
+
 1. Est-ce qu’il y a un décalage de représentation?
-  - Est-ce que tous les noms de classe ont un rapport avec le domaine?
+
+- Est-ce que tous les noms de classe ont un rapport avec le domaine?
+
 2. Est-ce que l’architecture en couche est respectée?
    - Est-ce que les contrôleurs GRASP sont bien identifiés?
    - Est-ce que les paramètres des opérations système sont tous de type primitif ou sont des objets de paramètres de type primitif?
@@ -86,13 +86,13 @@ Regardez votre diagramme TPLANT et répondez aux questions suivantes?
    1. Mysterious name relié au décalage des représentations ou pas
       1. Identifier le renommage (réusinage) éventuel de classe et/ou méthodes
    2. Large class (cohésion)
-      1. Proposer d'appliquer le réusinage Extract class / GRAPS fabrication pure 
+      1. Proposer d'appliquer le réusinage Extract class / GRAPS fabrication pure
    3. Trop de paramètres (4+)
       1. Proposer d'appliquer le réusinage Objet de paramètre
-   
+
 ### Évaluation par rapport aux objectifs
 
-> Documentez si vous avez abordé les objectifs précisés dans le plan d'itération. *(on reprend les objectifs)*
+> Documentez si vous avez abordé les objectifs précisés dans le plan d'itération. _(on reprend les objectifs)_
 
 - Résoudre les problèmes de la dernière itération soulevés par l’auxiliaire d'enseignement.
   - La rétroaction de l’auxiliaire d'enseignement a été positive. Bon travail l'équipe!
@@ -129,14 +129,13 @@ Nous devons trouver un autre moyen de faire les commits (peut-être avec des bra
 
 ### Retrait d'un membre de l'équipe pour contribution non significative
 
-- C'est ici que vous mettez le nom de la personne ainsi que les raisons du retrait. Cette section doit nécessairement inclure une liste d'objectifs que cette personne doit respecter pour pouvoir s'assurer de faire partie de l'itération suivante. 
-
+- C'est ici que vous mettez le nom de la personne ainsi que les raisons du retrait. Cette section doit nécessairement inclure une liste d'objectifs que cette personne doit respecter pour pouvoir s'assurer de faire partie de l'itération suivante.
 
 ---
 
-<a name="commentPlanifier">Comment planifier une itération selon le
-    processus unifié :</a>
-    <https://docs.google.com/a/etsmtl.net/document/d/1xeCCdR4-sTznTPaSKYIl4l_bQi-gE5stPWSA5VArRlY/edit?usp=sharing>
+`<a name="commentPlanifier">`Comment planifier une itération selon le
+processus unifié :`</a>`
+[https://docs.google.com/a/etsmtl.net/document/d/1xeCCdR4-sTznTPaSKYIl4l_bQi-gE5stPWSA5VArRlY/edit?usp=sharing](https://docs.google.com/a/etsmtl.net/document/d/1xeCCdR4-sTznTPaSKYIl4l_bQi-gE5stPWSA5VArRlY/edit?usp=sharing)
 
-<a name="commentEstimer">Comment estimer la taille :</a>
-    <https://docs.google.com/a/etsmtl.net/document/d/1bDy0chpWQbK9bZ82zdsBweuAgNYni3T2k79xihr6CuU/edit?usp=sharing>
+`<a name="commentEstimer">`Comment estimer la taille :`</a>`
+[https://docs.google.com/a/etsmtl.net/document/d/1bDy0chpWQbK9bZ82zdsBweuAgNYni3T2k79xihr6CuU/edit?usp=sharing](https://docs.google.com/a/etsmtl.net/document/d/1bDy0chpWQbK9bZ82zdsBweuAgNYni3T2k79xihr6CuU/edit?usp=sharing)
